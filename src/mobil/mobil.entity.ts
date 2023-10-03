@@ -1,4 +1,4 @@
-import { Entity, BaseEntity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, BaseEntity, PrimaryGeneratedColumn, ObjectIdColumn, Column } from 'typeorm';
 
 export enum MerekMobil {
   honda = 'honda',
@@ -8,7 +8,7 @@ export enum MerekMobil {
 
 @Entity('mobil')
 export class MobilEntity extends BaseEntity {
-  @PrimaryGeneratedColumn()
+  @ObjectIdColumn()
   id: number;
 
   @Column()

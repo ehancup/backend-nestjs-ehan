@@ -1,4 +1,4 @@
-import { Entity, BaseEntity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, BaseEntity, PrimaryGeneratedColumn,ObjectIdColumn, Column } from 'typeorm';
 
 export enum TType {
   a = 'pelajar',
@@ -6,9 +6,9 @@ export enum TType {
   c = 'pengangguran',
 }
 
-@Entity('user')
+@Entity()
 export class UserEntity extends BaseEntity {
-  @PrimaryGeneratedColumn()
+  @ObjectIdColumn()
   id: number;
 
   @Column()
