@@ -2,7 +2,7 @@ import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { MobilEntity } from './mobil.entity';
 import { Repository, Between, Like } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { BaseResponse } from 'src/interface/response/base.response';
+import { BaseResponse } from '../interface/response/base.response';
 import { ResponseSuccess } from 'src/interface/response';
 import {
   CreateMobilDto,
