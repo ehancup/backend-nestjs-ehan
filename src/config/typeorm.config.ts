@@ -6,6 +6,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   // username: 'root', // username default xampp root
   // password: '', // password default xampp string kosong
   url: 'mongodb+srv://hancup:hancup20@cluster0.gpzjnio.mongodb.net/?retryWrites=true&w=majority',
+  // url: 'mongodb://127.0.0.1:27017',
   database: 'ehan', // database default
   entities: ['dist/**/*.entity{.ts,.js}'],
   synchronize: true,

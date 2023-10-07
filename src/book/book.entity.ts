@@ -1,6 +1,12 @@
-import { Entity, BaseEntity, PrimaryGeneratedColumn, Column, ObjectIdColumn } from 'typeorm';
+import {
+  Entity,
+  BaseEntity,
+  PrimaryGeneratedColumn,
+  Column,
+  ObjectIdColumn,
+} from 'typeorm';
 
-@Entity()
+@Entity('book')
 export class Book extends BaseEntity {
   @ObjectIdColumn()
   id: number;

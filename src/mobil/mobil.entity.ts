@@ -1,4 +1,10 @@
-import { Entity, BaseEntity, PrimaryGeneratedColumn, ObjectIdColumn, Column } from 'typeorm';
+import {
+  Entity,
+  BaseEntity,
+  PrimaryGeneratedColumn,
+  ObjectIdColumn,
+  Column,
+} from 'typeorm';
 
 export enum MerekMobil {
   honda = 'honda',
